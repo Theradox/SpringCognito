@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          cognito:
+            clientId: 260ds4rif6lr5o2niusfor5t7o
+            clientSecret: e2ak9lgj651rvafoq6shgg9ff52sm5fddtlo304e09j53gn96ge
+            scope: openid
+            redirect-uri: http://localhost:8080/login/oauth2/code/cognito
+            clientName: SpringAppClient
+        provider:
+          cognito:
+            issuerUri: https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_R7RBorwr2
+            user-name-attribute: cognito:username
+
+
+#  should be populated as per our User Pool and App Client created on AWS.
+#
