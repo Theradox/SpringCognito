@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OAuth2 Cognito Demo</title>
 
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 </head>
@@ -31,10 +33,17 @@
 						<a class="button login is-primary"
 							th:href="@{/oauth2/authorization/cognito}">Log in with Amazon
 							Cognito</a>
+
+						<a class="button login is-primary" href="https://2020-bs.auth.eu-central-1.amazoncognito.com/
+						login?response_type=code&client_id=260ds4rif6lr5o2niusfor5t7o&redirect_uri=http://localhost:8080/login/oauth2/code/cognito">
+							Log in with google
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
 </body>
 </html>
